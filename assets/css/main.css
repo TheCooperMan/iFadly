@@ -33,6 +33,11 @@ ol, ul {
 	list-style: none;
 }
 
+/* Added by me */
+.action-btn {
+	background-color: #1876d5 !important;
+}
+
 blockquote, q {
 	quotes: none;
 }
