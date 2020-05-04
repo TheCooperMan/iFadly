@@ -1,7 +1,9 @@
-# iFadly
+## iFadly
 my Portfolio where I present my work and my side projects.
 
-# Link to the website
+## Link to the website
+[iFadly](https://thecooperman.github.io/iFadly/#)
 
-[iFadly.io](http://https://thecooperman.github.io/iFadly/)
+## Technologies used
+HTML, CSS, JS, Git, Github Pages
 
