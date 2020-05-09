@@ -38,6 +38,9 @@ ol, ul {
 	background-color: #1876d5 !important;
 }
 
+#intro > p {
+	margin: 0 0 0.5rem 0 !important;
+}
 blockquote, q {
 	quotes: none;
 }
