@@ -33,6 +33,7 @@ ol, ul {
 	list-style: none;
 }
 
+
 /* Added by me */
 .action-btn {
 	background-color: #1876d5 !important;
@@ -41,6 +42,7 @@ ol, ul {
 #intro > p {
 	margin: 0 0 0.5rem 0 !important;
 }
+
 blockquote, q {
 	quotes: none;
 }
