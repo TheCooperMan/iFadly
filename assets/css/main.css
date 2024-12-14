@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%; /* Makes the image circular */
+	margin-bottom: 15px; /* Adds spacing below the image */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
