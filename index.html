@@ -1,40 +1,66 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr" data-lang="fr">
 
 <head>
-	<title>iFadly | Ismail ElFadli Portfolio</title>
+	<title>iFadly | Ismail El Fadli – Platform Engineer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Ismail El Fadli – Platform Engineer Python, DevOps AWS / Kubernetes, FinOps et IA générative." />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Language switch */
+		html[data-lang="fr"] .en { display: none !important; }
+		html[data-lang="en"] .fr { display: none !important; }
+		.lang-switch { position: fixed; top: 1rem; right: 1rem; z-index: 10001; display: flex; border: 1px solid rgba(255,255,255,.6); border-radius: 4px; overflow: hidden; }
+		.lang-switch button { background: transparent !important; color: #fff !important; min-width: 0; border: 0; padding: .35rem .8rem; font-size: .75rem; letter-spacing: .15rem; cursor: pointer; line-height: 1.5; height: auto; box-shadow: none; }
+		.lang-switch button.active { background: rgba(255,255,255,.9) !important; color: #1b1f22 !important; }
+		/* Jobs */
+		.job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; margin-bottom: .2rem; }
+		.job-head h3 { margin: 0; }
+		.job-meta { font-size: .8rem; opacity: .75; }
+		.job-entry ul { margin-bottom: 1rem; }
+		.job-entry .stack { font-size: .8rem; opacity: .8; margin-bottom: 2rem; }
+		.skills-grid { display: grid; grid-template-columns: 9rem 1fr; gap: .4rem 1rem; margin-bottom: 2rem; }
+		.skills-grid b { font-weight: 600; }
+		@media (max-width: 480px) { .skills-grid { grid-template-columns: 1fr; } }
+	</style>
 </head>
 
 <body class="is-preload">
+
+	<div class="lang-switch" role="group" aria-label="Language">
+		<button type="button" data-set-lang="fr">FR</button>
+		<button type="button" data-set-lang="en">EN</button>
+	</div>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Header -->
 		<header id="header">
-
 			<div class="content">
 				<div class="inner">
-					<img src="images/your-image.png" alt="Ismail ELFADLI" class="profile-img" />
-					<h1>I'm Ismail ELFADLI</h1>
-					<p>Expert in Python Development & AWS Automation for High-Performance Cloud Solutions.<br />
+					<img src="images/your-image.png" alt="Ismail El Fadli" class="profile-img" />
+					<h1>Ismail El Fadli</h1>
+					<p>
+						<span class="fr">Platform Engineer Python · DevOps AWS / Kubernetes · FinOps · IA générative</span>
+						<span class="en">Platform Engineer · Python · DevOps AWS / Kubernetes · FinOps · Generative AI</span>
+					</p>
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#jobs">Jobs</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="#intro"><span class="fr">À propos</span><span class="en">About</span></a></li>
+					<li><a href="#jobs"><span class="fr">Expériences</span><span class="en">Experience</span></a></li>
+					<li><a href="#projects"><span class="fr">Projets</span><span class="en">Projects</span></a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+
 			<!-- Testimonials -->
 			<article id="testimonials">
 				<div class="testimonial-container">
@@ -51,9 +77,10 @@
 					</div>
 				</div>
 			</article>
-			
-			<a type="button" href="#contact" class="action-btn btn btn-dark btn-lg">Let's work together !</a>
 
+			<a type="button" href="#contact" class="action-btn btn btn-dark btn-lg">
+				<span class="fr">Travaillons ensemble !</span><span class="en">Let's work together!</span>
+			</a>
 		</header>
 
 		<!-- Main -->
@@ -61,190 +88,191 @@
 
 			<!-- Intro -->
 			<article id="intro">
-				<h2 class="major">Introduction</h2>
-				<!-- <span class="image main"><img src="images/me_1.jpg" alt="" /></span> -->
-				<p>Looking to strengthen your team? Want to optimize your cloud infrastructure and automate your processes? You're in the right place.</p>
+				<h2 class="major"><span class="fr">À propos</span><span class="en">About</span></h2>
 
-				<p>🏆 Cloud DevOps Infra Expert | Python Developer with +6 Years of Experience<br>
-				🚀 Specialist in Cloud Infrastructure and Process Automation<br>
-				⚡️ Advanced Proficiency in AWS, Python, API Development, and CI/CD<br>
-				🛠️ Industry Experience in Energy, Cloud Solutions, Automotive, and Bioinformatics<br>
-				✅ AWS Cloud Practitioner and CKAD Kubernetes Certified</p>
-				
-				<h3>Professional Experience:</h3>
-				<p>I've worked with major companies and successful startups:<br>
-				• Engie Digital (Cloud Infrastructure and Optimization)<br>
-				• 3DS Outscale (API Development and sovereign cloud)<br>
-				• Renault (Test automation for connected vehicles)<br>
-				• LORIA/INRIA (Bioinformatics projects)</p>				
-			
-				<h3>My Expertise:</h3>
-				<p>☁️ Deployment and management of cloud infrastructures on AWS<br>
-				🛰️ Development of optimized CI/CD pipelines: Jenkins, GitHub Actions<br>
-				🤖 Infrastructure as Code (IaC): Terraform, CloudFormation<br>
-				📊 Monitoring: Grafana, CloudWatch, Checkov<br>
-				🔬 Automated testing: Unit, Integration, E2E<br>
-				🐍 Python and API development<br>
-				🌐 Responsive websites and e-commerce (WordPress and custom)<br>
-				📣 Digital marketing: Facebook Ads, TikTok Ads, Google Ads</p>
-			
-				<h3>Who Am I?</h3>
-				<p>📡 Cloud DevOps Consultant @Devoteam for Engie Digital<br>
-				🧪 Python API Developer @ 3DS Outscale<br>
-				🚗 QA Engineer at Renault, specialized in connected vehicles<br>
-				🧬 Experience in bioinformatics at LORIA/INRIA</p>
-			
-				<h3>What Sets Me Apart?</h3>
-				<p>🌊 Diving enthusiast, club member<br>
-				❤️ Former volunteer lifeguard<br>
-				🌍 Multilingual: French, English, Spanish, Arabic</p>
-			
-				<h3>My Achievements:</h3>
-				<ul>
-					<li>40% reduction in deployment times through automation</li>
-					<li>Design and evolution of AWS-compatible APIs</li>
-					<li>Implementation of security tools for IaC code analysis</li>
-					<li>Implementation of automated testing frameworks</li>
-				</ul>
-			
-				<p>Available for missions in Cloud, DevOps, Python development, and QA. From cloud infrastructure to digital marketing, I adapt quickly to your specific needs! Ready to tackle your tech and business challenges!</p>
-			
-				<p>For more, see my <a href="#jobs">jobs</a> history and my list of <a href="#projects">projects</a>, or <a href="#contact">contact me</a>.</p>
-			
-				<p>I respond in less than 1 hour, when shall we discuss? ➡️ <a href="mailto:lookingforismail@gmail.com">lookingforismail@gmail.com</a></p>
-			</article>
-
-			<!-- Work -->
-			<article id="jobs">
-				<h2 class="major">Jobs</h2>
-				
-
-				<!-- Second Job Entry -->
-				<div class="job-entry">
-					<!-- New Job Entry -->
-					<h3 class="text-center"><i class="fas fa-circle"></i><u>Python Developer Automation QA API</u></h3>
-					<div class="media mb-2">
-						<img style="max-height: 90px; max-width: 90px;" class="rounded align-self-center mt-0 mr-3"
-							src="images/Logo_Outscale_Bleu_300x160-300x160.png" alt="New Company Logo">
-						<div class="media-body mt-2">
-							<i class="fas fa-clock"></i><b> 2 years</b> - from 07/2020 to 08/2022 <br>
-							<i class="fas fa-map-marker-alt"></i> <a href="https://en.outscale.com/">Outscale,
-								Saint-Cloud Paris Regions</a>
-						</div>
-					</div>
-					<p class="text-justify">
-						As part of the API Product Quality team, I collaborated closely with development and R&D teams,
-						taking on both technical and functional roles.
-						I gained expertise in test automation and continuous integration within a cloud-based
-						environment, fully aligned with AWS compatibility.
-					</p>
-
-					<u>
-						<h4>Responsibilities</h4>
-					</u>
-					<ul>
-						<li>Developed API descriptions and contributed to the complete development lifecycle, including
-							testing and deployment.</li>
-						<li>Implemented automated billing solutions, reducing manual processing time</li>
-						<li>Report quality alerts related to these projects</li>
-						<li>Active participant in project meetings (Agile Ceremonies, Issue Tracking, Retro/Review,
-							etc.)</li>
-						<li>Recommend the Quality vision for GO/NoGo events</li>
-						<li>Participate in functional or technical reviews</li>
-					</ul>
-
-					<u>
-						<h4>Technical Environment</h4>
-					</u>
-					<p>Cloud, Outscale API, Python3, SQL, Shell, Linux Env, Docker, CI/CD, Terraform, Jenkins, Atlassian
-						Suite, Git, Gitlab, Grafana, Kibana.</p>
+				<div class="fr">
+					<p><b>Platform Engineer</b> avec plus de 7 ans d'expérience, je construis les plateformes internes qui fournissent aux équipes de développement leurs outils, leurs accès et leur infrastructure cloud.</p>
+					<p>Je ne me limite pas au développement : je pars du besoin métier et des règles de gestion pour livrer une plateforme utile, pilotable et dont les coûts sont maîtrisés. Chez ENGIE, je suis super-administrateur des outils de développement du groupe (Jira, Confluence, GitHub, SonarQube…) et je pilote leur FinOps : coût de chaque outil (par siège, par ligne de code, par minute CPU), coûts trimestriels, projections annuelles et refacturation à chaque entité. J'y ai aussi porté l'arrivée de GitHub Copilot et Claude Code de bout en bout.</p>
+					<p>J'utilise aussi l'IA générative dans mon propre travail : j'ai créé pour mon équipe des skills Claude Code et un serveur MCP connectés à nos outils (Jira, GitHub, SonarQube), pour le tri des tickets, la revue de code et les releases.</p>
 				</div>
-				<div class="job-entry">
-					<h3 class="text-center"><i class="fas fa-circle"></i><u>Software Engineer/QA Engineer</u></h3>
-					<div class=" media mb-2">
-						<img style="max-height: 90px; max-width: 90px;" class="rounded align-self-center mt-0 mr-3"
-							src="images/Renault_2009_logo.svg" alt="Renault Logo">
-						<div class=" media-body mt-2">
-							<i class="fas fa-clock"></i><b>1 year and 3 months</b> - from 03/2019 to 06/2020 <br>
-							<i class="fas fa-map-marker-alt"></i> <a
-								href="https://group.renault.com/groupe/implantations/technocentre/">Renault Guyancourt
-								(78) Paris Regions</a>
-						</div>
-
-					</div>
-					<p class="text-justify">with an interest to the automotive industry and with no previous experience
-						in that sector, I joined the Multimedia System team which tests several services of different
-						Connected Vehicles Projects. <br>
-						I was able to adapt and overcome the difficulties resulting in being a <b>technical referent</b>
-						for a team in Russia,
-						an opportunity to sharp my English communication and continue working on an International
-						environment.
-					</p>
-
-					<u>
-						<h4>Responsibilities</h4>
-					</u>
-					<ul>
-						<li>Execute <a href="https://en.wikipedia.org/wiki/Smoke_testing_(software)">SMOKE</a> and
-							Integration tests on several components (vNext - Microsoft, Kamereon ..) and ECUs (AIVI,
-							AIVC ..).</li>
-						<li>Ensure that all end-to-end tests on <a href="">bench</a> and vehicle are properly executed
-							and giving regular feedback on their status to other teams.</li>
-						<li>Create and Track Tickets linked to bugs using <a
-								href="https://www.atlassian.com/fr/software/jira">Jira</a>.</li>
-						<li>Automation Testing and feature development with <a
-								href="https://www.python.org/">Python</a>.</li>
-						<li>Analyze logs using Shell commands and SQL queries in the Microsoft Azure portal.</li>
-						<li>Create technical documentation in <a
-								href="https://www.atlassian.com/fr/software/confluence">Confluence</a>.</li>
-						<li>Test Management with <a
-								href="https://www.microfocus.com/fr-fr/products/silk-central/overview">SilkCentral</a>
-							and HP Quality Center.</li>
-						<li>Use <a
-								href="https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm">Talend
-								API Tester</a> to interact with REST services and create test scenarios.</li>
-						<li>Internal Training</li>
-						<li>Grow internally and acquire a position of <b>Technical Referent</b> for a team in Russia
-							(Training, Support, Daily meeting).</li>
-					</ul>
-					<u>
-						<h4>Technical Environment</h4>
-					</u>
-					<p>Python, Shell, Jira, Confluence, Silk Central, HP Quality Center, vNext Microsoft, Microsoft
-						Azure, SQL, Restlet API, Postman, WinSCP, ADB, Linux, smTrace, CANalyzer </p>
+				<div class="en">
+					<p><b>Platform Engineer</b> with 7+ years of experience. I build the internal platforms that give development teams their tools, their access and their cloud infrastructure.</p>
+					<p>I don't stop at the code: I start from business needs and rules to deliver a platform that is useful, easy to manage and cost-controlled. At ENGIE, I am super-admin of the group's development tools (Jira, Confluence, GitHub, SonarQube…) and I run their FinOps: cost model for each tool (per seat, per line of code, per CPU minute), quarterly costs, yearly forecasts and chargeback to each business unit. I also led the rollout of GitHub Copilot and Claude Code end to end.</p>
+					<p>I use generative AI in my own work too: I built Claude Code skills and an MCP server for my team, connected to our tools (Jira, GitHub, SonarQube), to speed up ticket triage, code review and releases.</p>
 				</div>
-				<hr class="job-separator">
-			</article>
-			<article id="projects">
-				<h2 class="major">Projects</h2>
+
+				<h3><span class="fr">Compétences</span><span class="en">Skills</span></h3>
+				<div class="skills-grid">
+					<b>Python</b><span><span class="fr">Backend, CLI, librairies, intégrations d'API</span><span class="en">Backend, CLI, libraries, API integrations</span></span>
+					<b>Cloud &amp; IaC</b><span>AWS (Lambda, Step Functions, SQS, S3, ECS/Fargate, EKS, IAM), Terraform, CloudFormation</span>
+					<b><span class="fr">Conteneurs</span><span class="en">Containers</span></b><span>Kubernetes, Helm, Argo CD, Docker</span>
+					<b>CI/CD</b><span>GitHub Actions, Jenkins, GitLab CI</span>
+					<b><span class="fr">IA générative</span><span class="en">Generative AI</span></b><span>GitHub Copilot, Claude Code, <span class="fr">serveurs MCP</span><span class="en">MCP servers</span></span>
+					<b>FinOps</b><span><span class="fr">Coût par siège et à l'usage, prévisions trimestrielles et annuelles, refacturation par entité</span><span class="en">Per-seat and usage-based costs, quarterly and yearly forecasts, chargeback per business unit</span></span>
+					<b>Administration</b><span><span class="fr">Super-admin</span><span class="en">Super-admin of</span> Jira, Confluence, GitHub, SonarQube ; Okta (SSO, SCIM), <span class="fr">clés et tokens API</span><span class="en">API keys and tokens</span></span>
+				</div>
+
+				<p>✅ <span class="fr">Certifié</span><span class="en">Certified</span> Kubernetes (CKAD) &amp; AWS Cloud Practitioner<br>
+				🌍 <span class="fr">Français, anglais, arabe</span><span class="en">French, English, Arabic</span></p>
+
 				<p>
-					<u style="text-decoration:none">
-						<li><a href="https://github.com/TheCooperMan/RandomDrinkPicker">Random Drink Picker: </a>
-							A serverless application that uses AWS Lambda, DynamoDB, and API Gateway to fetch a list of drinks,
-							process user requests, and return personalized responses dynamically. </li>
-							<li><a href="https://github.com/TheCooperMan/CLAPSY">Colapsy: </a>
-								CLI Game, One of my old and first projects build by curiosity using Python.</li>
-
-					</u>
+					<span class="fr">Disponible pour des missions Platform Engineering, DevOps et Python, en Île-de-France. Voir mes <a href="#jobs">expériences</a> ou <a href="#contact">me contacter</a>.</span>
+					<span class="en">Available for Platform Engineering, DevOps and Python missions in the Paris area. See my <a href="#jobs">experience</a> or <a href="#contact">contact me</a>.</span>
 				</p>
 			</article>
+
+			<!-- Jobs -->
+			<article id="jobs">
+				<h2 class="major"><span class="fr">Expériences</span><span class="en">Experience</span></h2>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3>Platform Engineer Python</h3>
+						<span class="job-meta"><span class="fr">Sept. 2025 – aujourd'hui</span><span class="en">Sept. 2025 – present</span></span>
+					</div>
+					<p class="job-meta">ENGIE Digital · Freelance</p>
+					<p class="fr">Plateforme DevOps interne du groupe ENGIE : elle fournit automatiquement aux équipes de développement leurs outils (Jira, Confluence, GitHub, SonarQube, Artifactory, Copilot, Claude Code), gère les accès de dizaines de milliers d'utilisateurs et refacture l'usage aux entités.</p>
+					<p class="en">ENGIE's internal DevOps platform: it automatically provides development teams with their tools (Jira, Confluence, GitHub, SonarQube, Artifactory, Copilot, Claude Code), manages access for tens of thousands of users and charges usage back to business units.</p>
+					<ul class="fr">
+						<li>Développement backend Python : librairies internes, CLI et clients d'API (Atlassian, GitHub, Okta).</li>
+						<li>Automatisation du provisioning sur AWS : Lambda, Step Functions, SQS, Terraform, GitHub Actions, Jenkins.</li>
+						<li>FinOps sur tous les outils : coût par siège, par ligne de code (SonarQube), par minute CPU (GitHub Actions) ; coûts trimestriels, projections annuelles et refacturation par entité.</li>
+						<li>Super-admin Jira, Confluence, GitHub et SonarQube : accès, nettoyage des contrats et licences, règles d'automatisation et workflows Jira.</li>
+						<li>Déploiement de GitHub Copilot et Claude Code dans le groupe ; skills Claude Code et serveur MCP pour l'équipe.</li>
+						<li>Migration Atlassian vers le Cloud : provisioning des identités via Okta (SSO, SCIM).</li>
+					</ul>
+					<ul class="en">
+						<li>Python backend development: internal libraries, CLI and API clients (Atlassian, GitHub, Okta).</li>
+						<li>Automated provisioning on AWS: Lambda, Step Functions, SQS, Terraform, GitHub Actions, Jenkins.</li>
+						<li>FinOps across all tools: cost per seat, per line of code (SonarQube), per CPU minute (GitHub Actions); quarterly costs, yearly forecasts and chargeback per business unit.</li>
+						<li>Super-admin of Jira, Confluence, GitHub and SonarQube: access management, contract and licence cleanup, Jira automation rules and workflows.</li>
+						<li>Group-wide rollout of GitHub Copilot and Claude Code; Claude Code skills and an MCP server for the team.</li>
+						<li>Atlassian Cloud migration: identity provisioning through Okta (SSO, SCIM).</li>
+					</ul>
+					<p class="stack">Python · AWS · Terraform · Kubernetes · PostgreSQL · GitHub Actions · Okta · Atlassian Cloud · Claude Code / MCP</p>
+				</div>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3><span class="fr">Consultant DevOps / Développeur Python</span><span class="en">DevOps Consultant / Python Developer</span></h3>
+						<span class="job-meta"><span class="fr">Oct. 2024 – août 2025</span><span class="en">Oct. 2024 – Aug. 2025</span></span>
+					</div>
+					<p class="job-meta">Société Générale · Synchrone</p>
+					<ul class="fr">
+						<li>Portail Platform-as-a-Service (Python, React) pour l'onboarding et la gouvernance des applications Data du groupe.</li>
+						<li>Gestion des accès : feeders qui collectent les données de chaque outil vers nos bases ; souscriptions aux API, clés et tokens.</li>
+						<li>Administration des clusters Kubernetes et déploiements en production (Helm, Argo CD).</li>
+						<li>Référentiel des assets de la Software Factory (Python, PostgreSQL), KPI et tableaux de bord Power BI.</li>
+					</ul>
+					<ul class="en">
+						<li>Platform-as-a-Service portal (Python, React) for onboarding and governing the group's Data applications.</li>
+						<li>Access management: feeders collecting data from each tool into our databases; API subscriptions, keys and tokens.</li>
+						<li>Kubernetes cluster administration and production deployments (Helm, Argo CD).</li>
+						<li>Software Factory asset inventory (Python, PostgreSQL), KPIs and Power BI dashboards.</li>
+					</ul>
+					<p class="stack">Kubernetes · Helm · Argo CD · Python · React · PostgreSQL · GitHub Actions · Jenkins · Power BI</p>
+				</div>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3><span class="fr">Consultant DevOps Cloud AWS</span><span class="en">AWS Cloud DevOps Consultant</span></h3>
+						<span class="job-meta"><span class="fr">Sept. 2022 – janv. 2024</span><span class="en">Sept. 2022 – Jan. 2024</span></span>
+					</div>
+					<p class="job-meta">ENGIE Digital · Devoteam</p>
+					<ul class="fr">
+						<li>Build et run de l'architecture AWS d'une plateforme d'optimisation des réseaux de chaleur et de froid.</li>
+						<li>Pipeline CI/CD (Terraform, CloudFormation, Jenkins) : temps de déploiement réduit de 40 %.</li>
+						<li>Migration vers Fargate : coûts cloud réduits de 25 % ; API Python (FastAPI, Serverless) et Kubernetes (EKS).</li>
+					</ul>
+					<ul class="en">
+						<li>Built and ran the AWS architecture of a platform optimising district heating and cooling networks.</li>
+						<li>CI/CD pipeline (Terraform, CloudFormation, Jenkins): deployment time cut by 40%.</li>
+						<li>Migration to Fargate: cloud costs cut by 25%; Python APIs (FastAPI, Serverless) and Kubernetes (EKS).</li>
+					</ul>
+					<p class="stack">AWS · Terraform · CloudFormation · Docker · Kubernetes · Jenkins · Python · Grafana</p>
+				</div>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3><span class="fr">Développeur Python, automatisation API</span><span class="en">Python Developer, API Automation</span></h3>
+						<span class="job-meta"><span class="fr">Juil. 2020 – juil. 2022</span><span class="en">Jul. 2020 – Jul. 2022</span></span>
+					</div>
+					<p class="job-meta">3DS Outscale · Saint-Cloud</p>
+					<ul class="fr">
+						<li>Développement et tests automatisés d'API cloud compatibles AWS.</li>
+						<li>Pipelines CI/CD GitLab et Jenkins : déploiements 30 % plus rapides.</li>
+						<li>Contribution à la solution de facturation cloud.</li>
+					</ul>
+					<ul class="en">
+						<li>Development and automated testing of AWS-compatible cloud APIs.</li>
+						<li>GitLab and Jenkins CI/CD pipelines: 30% faster deployments.</li>
+						<li>Contributed to the cloud billing solution.</li>
+					</ul>
+					<p class="stack">Python · AWS · Docker · Terraform · GitLab CI · Jenkins · Grafana · ELK</p>
+				</div>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3><span class="fr">Ingénieur QA / Automatisation</span><span class="en">QA / Automation Engineer</span></h3>
+						<span class="job-meta"><span class="fr">Mars 2019 – juin 2020</span><span class="en">Mar. 2019 – Jun. 2020</span></span>
+					</div>
+					<p class="job-meta">Renault · Ausy, Guyancourt</p>
+					<ul class="fr">
+						<li>Automatisation des tests de systèmes embarqués connectés (Python, Linux, Azure).</li>
+						<li>Référent technique d'une équipe en Russie : formation, support, daily meetings.</li>
+					</ul>
+					<ul class="en">
+						<li>Test automation for connected embedded systems (Python, Linux, Azure).</li>
+						<li>Technical referent for a team in Russia: training, support, daily meetings.</li>
+					</ul>
+					<p class="stack">Python · Shell · SQL · Azure · Jira · Confluence</p>
+				</div>
+
+				<div class="job-entry">
+					<div class="job-head">
+						<h3><span class="fr">Stage ingénieur R&amp;D</span><span class="en">R&amp;D Engineer Intern</span></h3>
+						<span class="job-meta"><span class="fr">Févr. – août 2018</span><span class="en">Feb. – Aug. 2018</span></span>
+					</div>
+					<p class="job-meta">LORIA / INRIA · Nancy</p>
+					<ul class="fr">
+						<li>Étude et recherche en modélisation moléculaire et docking ; participation aux séminaires de l'équipe.</li>
+						<li>Application web d'analyse statistique (Python, Flask, JavaScript), CI/CD et déploiement Docker.</li>
+					</ul>
+					<ul class="en">
+						<li>Research in molecular modelling and docking; took part in the team's seminars.</li>
+						<li>Statistical analysis web app (Python, Flask, JavaScript), CI/CD and Docker deployment.</li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- Projects -->
+			<article id="projects">
+				<h2 class="major"><span class="fr">Projets</span><span class="en">Projects</span></h2>
+				<ul>
+					<li><a href="https://github.com/TheCooperMan/RandomDrinkPicker">Random Drink Picker</a> :
+						<span class="fr">application serverless (AWS Lambda, DynamoDB, API Gateway) qui renvoie des réponses personnalisées selon la demande de l'utilisateur.</span>
+						<span class="en">a serverless app (AWS Lambda, DynamoDB, API Gateway) that returns personalised responses based on the user's request.</span></li>
+					<li><a href="https://github.com/TheCooperMan/CLAPSY">Clapsy</a> :
+						<span class="fr">jeu en ligne de commande en Python, l'un de mes premiers projets.</span>
+						<span class="en">a Python command-line game, one of my first projects.</span></li>
+				</ul>
+			</article>
+
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<p>You can email me at <a href="mailto:lookingforismail@gmail.com"
-						target="_blank">lookingforismail@gmail.com</a></p>
+				<p><span class="fr">Écrivez-moi à</span><span class="en">Email me at</span>
+					<a href="mailto:lookingforismail@gmail.com" target="_blank">lookingforismail@gmail.com</a></p>
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/ismailelfadli/" class="icon brands fa-linkedin"><span
-								class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/TheCooperMan" class="icon brands fa-github"><span
-								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/ismailelfadli/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/TheCooperMan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 				</ul>
 			</article>
 		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Ismail ELFADLI. Design: <a href="#">iFadly</a>.</p>
+			<p class="copyright">&copy; Ismail El Fadli. Design: <a href="#">iFadly</a>.</p>
 		</footer>
 
 	</div>
@@ -258,6 +286,26 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		(function () {
+			var root = document.documentElement;
+			function setLang(lang) {
+				root.setAttribute('data-lang', lang);
+				root.setAttribute('lang', lang);
+				document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+					b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+				});
+				try { localStorage.setItem('lang', lang); } catch (e) {}
+			}
+			var saved = null;
+			try { saved = localStorage.getItem('lang'); } catch (e) {}
+			var browser = (navigator.language || 'fr').slice(0, 2) === 'fr' ? 'fr' : 'en';
+			setLang(saved || browser);
+			document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+				b.addEventListener('click', function (ev) { ev.stopPropagation(); setLang(b.getAttribute('data-set-lang')); });
+			});
+		})();
+	</script>
 
 </body>
 
