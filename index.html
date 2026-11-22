@@ -6,6 +6,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Ismail El Fadli – Platform Engineer Python, DevOps AWS / Kubernetes, FinOps et IA générative." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://thecooperman.github.io/iFadly/" />
+	<meta property="og:title" content="Ismail El Fadli – Platform Engineer Python · DevOps · FinOps · IA générative" />
+	<meta property="og:description" content="Platform Engineer avec 7+ ans d'expérience : plateformes internes pour les équipes de dev, AWS / Kubernetes, FinOps des outils et IA générative (Copilot, Claude Code, MCP)." />
+	<meta property="og:image" content="https://thecooperman.github.io/iFadly/images/your-image.png" />
+	<meta name="twitter:card" content="summary" />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
@@ -36,6 +42,13 @@
 		.lightbox.open { display: flex; }
 		.lightbox img { max-width: min(92vw, 900px); max-height: 85vh; width: auto; height: auto; border-radius: 8px; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
 		.lightbox .lb-close { position: absolute; top: 1rem; left: 1.2rem; color: #fff; font-size: 2rem; line-height: 1; opacity: .8; }
+		/* Availability badge + CV button */
+		.avail { display: inline-flex; align-items: center; gap: .45rem; margin-top: 1rem; padding: .3rem .9rem; border-radius: 999px; background: rgba(46, 204, 113, .15); border: 1px solid rgba(46, 204, 113, .6); font-size: .7rem; letter-spacing: .1rem; text-transform: uppercase; }
+		.avail::before { content: ''; width: .5rem; height: .5rem; border-radius: 50%; background: #2ecc71; box-shadow: 0 0 0 0 rgba(46,204,113,.7); animation: pulse 2s infinite; }
+		.avail[data-available="false"] { display: none; }
+		@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(46,204,113,.7); } 70% { box-shadow: 0 0 0 .5rem rgba(46,204,113,0); } 100% { box-shadow: 0 0 0 0 rgba(46,204,113,0); } }
+		.action-btn.cv-btn { background-color: transparent !important; border: 1px solid rgba(255,255,255,.8) !important; }
+		.header-actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
 		/* Jobs */
 		.job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; margin-bottom: .2rem; }
 		.job-head h3 { margin: 0; }
@@ -68,6 +81,8 @@
 						<span class="fr">Platform Engineer Python · DevOps AWS / Kubernetes · FinOps · IA générative</span>
 						<span class="en">Platform Engineer · Python · DevOps AWS / Kubernetes · FinOps · Generative AI</span>
 					</p>
+					<!-- Disponibilité : mettre data-available="false" pour masquer le badge -->
+					<div class="avail" data-available="true"><span class="fr">Disponible pour de nouvelles missions</span><span class="en">Open to new missions</span></div>
 					<div class="tech-strip">
 						<div class="tech" title="Python"><span class="ico"><img src="images/skills/python.svg" alt="Python" /></span><small>Python</small></div>
 						<div class="tech" title="AWS"><span class="ico"><img src="images/skills/aws.svg" alt="AWS" /></span><small>AWS</small></div>
@@ -110,9 +125,14 @@
 				</div>
 			</article>
 
-			<a type="button" href="#contact" class="action-btn btn btn-dark btn-lg">
-				<span class="fr">Travaillons ensemble !</span><span class="en">Let's work together!</span>
-			</a>
+			<div class="header-actions">
+				<a type="button" href="#contact" class="action-btn btn btn-dark btn-lg">
+					<span class="fr">Travaillons ensemble !</span><span class="en">Let's work together!</span>
+				</a>
+				<a href="CV_Ismail_El_Fadli.pdf" target="_blank" rel="noopener" class="action-btn cv-btn btn btn-dark btn-lg">
+					<span class="fr">Télécharger mon CV</span><span class="en">Download my CV (FR)</span>
+				</a>
+			</div>
 		</header>
 
 		<!-- Main -->
@@ -295,6 +315,7 @@
 				<h2 class="major">Contact</h2>
 				<p><span class="fr">Écrivez-moi à</span><span class="en">Email me at</span>
 					<a href="mailto:lookingforismail@gmail.com" target="_blank">lookingforismail@gmail.com</a></p>
+				<p><a href="https://www.malt.fr/profile/ismailelfadli" target="_blank" rel="noopener"><span class="fr">Mon profil Malt</span><span class="en">My Malt profile</span></a> · <a href="CV_Ismail_El_Fadli.pdf" target="_blank" rel="noopener"><span class="fr">Mon CV (PDF)</span><span class="en">My CV (PDF, French)</span></a></p>
 				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/ismailelfadli/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 					<li><a href="https://github.com/TheCooperMan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
