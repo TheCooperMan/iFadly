@@ -12,6 +12,8 @@
 	<meta property="og:description" content="Platform Engineer avec 7+ ans d'expérience : plateformes internes pour les équipes de dev, AWS / Kubernetes, FinOps des outils et IA générative (Copilot, Claude Code, MCP)." />
 	<meta property="og:image" content="https://thecooperman.github.io/iFadly/images/your-image.png" />
 	<meta name="twitter:card" content="summary" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
@@ -73,9 +75,22 @@
 		}
 		#header .content .inner { max-height: 60rem; }
 		@media (max-width: 480px) { .tech-strip { gap: .4rem; } .tech-strip .tech { width: 3.9rem; } .tech-strip .tech span.ico { width: 2.3rem; height: 2.3rem; } .tech-strip .tech small { font-size: .5rem; letter-spacing: .04rem; } }
-		#header > #testimonials { margin-top: 1.8rem; }
-		#testimonials .testimonial-container { margin-top: .8rem; }
 		.testimonials-title { text-align: center; font-size: .8rem; letter-spacing: .3rem; font-weight: 600; opacity: .9; margin: 0; }
+		/* Testimonials as quotes */
+		#header > #testimonials { margin-top: 2.2rem; width: 100%; max-width: 72rem; }
+		.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 1.4rem; text-align: left; }
+		.quote { position: relative; margin: 0; padding: 2.4rem 1.8rem 1.6rem; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.14); border-radius: 6px; display: flex; flex-direction: column; justify-content: space-between; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: border-color .3s, transform .3s; }
+		.quote:hover { border-color: rgba(214,184,124,.6); transform: translateY(-3px); }
+		.quote::before { content: '\201C'; position: absolute; top: .2rem; left: 1.2rem; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 4.5rem; line-height: 1; color: #d6b87c; opacity: .9; }
+		.quote blockquote { border: 0; padding: 0; margin: 0 0 1.6rem; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 1.15rem; line-height: 1.55; color: rgba(255,255,255,.92); text-transform: none; letter-spacing: 0; }
+		.quote figcaption { display: flex; align-items: center; gap: .9rem; padding-top: 1.1rem; border-top: 1px solid rgba(214,184,124,.35); }
+		.quote figcaption img { width: 3.2rem; height: 3.2rem; border-radius: 50%; object-fit: cover; flex: none; border: 1px solid rgba(214,184,124,.6); }
+		.quote figcaption strong { display: block; font-size: .82rem; letter-spacing: .12rem; text-transform: uppercase; }
+		.quote figcaption span { display: block; font-size: .72rem; opacity: .7; line-height: 1.4; }
+		.quote figcaption span span, .quote figcaption a span { display: inline; opacity: 1; font-size: inherit; }
+		.quote figcaption a { display: inline-block; margin-top: .35rem; font-size: .68rem; letter-spacing: .1rem; text-transform: uppercase; color: #d6b87c !important; border-bottom: 1px solid transparent; }
+		.quote figcaption a:hover { border-bottom-color: #d6b87c; text-decoration: none; }
+		@media (max-width: 980px) { .quotes { grid-template-columns: 1fr; max-width: 34rem; margin-left: auto; margin-right: auto; } }
 		/* Typography */
 		#header .content .inner h1 { font-weight: 700; letter-spacing: .35rem; }
 		h2.major { letter-spacing: .3rem; }
@@ -154,22 +169,35 @@
 			</nav>
 
 			<!-- Testimonials -->
-			<article id="testimonials">
+			<section id="testimonials">
 				<h2 class="testimonials-title"><span class="fr">Retours clients &amp; collègues</span><span class="en">Client &amp; peer feedback</span></h2>
-				<div class="testimonial-container">
-					<div class="testimonial-row">
-						<div class="testimonial-item">
-							<img src="images/stephen-ozoigbo-feedback.png" alt="Stephen Ozoigbo Testimonial" class="testimonial-img" />
-						</div>
-						<div class="testimonial-item">
-							<img src="images/zakaria-hili-engie-digital-feedback.png" alt="Zakaria Hili Testimonial" class="testimonial-img" />
-						</div>
-						<div class="testimonial-item">
-							<img src="images/remy-engie-digital-feedback.png" alt="Remy Testimonial" class="testimonial-img" />
-						</div>
-					</div>
+				<div class="quotes">
+					<figure class="quote">
+						<blockquote lang="fr">Ismail a été efficace en tant que DevOps chez Engie Digital, contribuant au développement d’une API et à l’implémentation de fonctions AWS Lambda. Sa méthode pragmatique et sa capacité à résoudre les problèmes de manière efficace ont été appréciées.</blockquote>
+						<figcaption>
+							<img src="images/avatars/zakaria.jpg" alt="Zakaria Hili" loading="lazy" />
+							<div><strong>Zakaria Hili</strong><span>Lead DevOps · ENGIE Digital</span>
+							<a href="https://www.malt.fr/profile/ismailelfadli#recommendations-section" target="_blank" rel="noopener"><span class="fr">Voir l’avis sur Malt</span><span class="en">View on Malt</span> →</a></div>
+						</figcaption>
+					</figure>
+					<figure class="quote">
+						<blockquote lang="en">I had the pleasure of working with Ismail to organize a Pan-African technology conference in Casablanca. His willingness to learn and adapt, attention to detail and agility through process was an absolute delight.</blockquote>
+						<figcaption>
+							<img src="images/avatars/stephen.jpg" alt="Stephen Ozoigbo" loading="lazy" />
+							<div><strong>Stephen Ozoigbo</strong><span>Head of Government Partnerships &amp; Ecosystems · <span class="fr">ancien manager</span><span class="en">former manager</span></span>
+							<a href="https://www.linkedin.com/in/ismailelfadli/details/recommendations/" target="_blank" rel="noopener"><span class="fr">Voir l’avis sur LinkedIn</span><span class="en">View on LinkedIn</span> →</a></div>
+						</figcaption>
+					</figure>
+					<figure class="quote">
+						<blockquote lang="fr">Ismael est une personne très agréable avec un excellent mindset, sa curiosité et son autonomie ont permis à l’équipe de valider de grandes étapes d’évolutions de l’infrastructure.</blockquote>
+						<figcaption>
+							<img src="images/avatars/sandjivy.jpg" alt="R. Sandjivy" loading="lazy" />
+							<div><strong>R. Sandjivy</strong><span>Agile Delivery Manager · ENGIE Digital</span>
+							<a href="https://www.malt.fr/profile/ismailelfadli#recommendations-section" target="_blank" rel="noopener"><span class="fr">Voir l’avis sur Malt</span><span class="en">View on Malt</span> →</a></div>
+						</figcaption>
+					</figure>
 				</div>
-			</article>
+			</section>
 
 			<div class="header-actions">
 				<a type="button" href="#contact" class="action-btn btn btn-dark btn-lg">
