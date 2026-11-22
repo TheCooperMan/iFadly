@@ -30,6 +30,12 @@
 		/* Company logos */
 		.job-title { display: flex; align-items: center; gap: .8rem; }
 		.job-logo { height: 2.8rem; width: auto; min-width: 2.8rem; max-width: 6rem; flex: none; border-radius: 6px; background: #fff; padding: .3rem; object-fit: contain; }
+		/* Testimonial lightbox */
+		.testimonial-img { cursor: zoom-in; }
+		.lightbox { position: fixed; inset: 0; z-index: 10002; background: rgba(10,12,15,.88); display: none; align-items: center; justify-content: center; padding: 2rem; cursor: zoom-out; }
+		.lightbox.open { display: flex; }
+		.lightbox img { max-width: min(92vw, 900px); max-height: 85vh; width: auto; height: auto; border-radius: 8px; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+		.lightbox .lb-close { position: absolute; top: 1rem; left: 1.2rem; color: #fff; font-size: 2rem; line-height: 1; opacity: .8; }
 		/* Jobs */
 		.job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; margin-bottom: .2rem; }
 		.job-head h3 { margin: 0; }
@@ -303,6 +309,9 @@
 
 	</div>
 
+	<!-- Lightbox -->
+	<div class="lightbox" id="lightbox" aria-hidden="true"><span class="lb-close">&times;</span><img alt="" /></div>
+
 	<!-- BG -->
 	<div id="bg"></div>
 
@@ -330,6 +339,19 @@
 			document.querySelectorAll('[data-set-lang]').forEach(function (b) {
 				b.addEventListener('click', function (ev) { ev.stopPropagation(); setLang(b.getAttribute('data-set-lang')); });
 			});
+		})();
+		(function () {
+			var lb = document.getElementById('lightbox'), img = lb.querySelector('img');
+			function close() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); }
+			document.querySelectorAll('.testimonial-img').forEach(function (t) {
+				t.addEventListener('click', function (ev) {
+					ev.preventDefault(); ev.stopPropagation();
+					img.src = t.src; img.alt = t.alt;
+					lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+				});
+			});
+			lb.addEventListener('click', function (ev) { ev.stopPropagation(); close(); });
+			document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') close(); }, true);
 		})();
 	</script>
 
