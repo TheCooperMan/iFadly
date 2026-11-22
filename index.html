@@ -20,6 +20,16 @@
 		.lang-switch button.active { background: rgba(255,255,255,.9) !important; color: #1b1f22 !important; }
 		/* Nav: equal widths so the template's centre separator lines up */
 		#header nav ul li a { min-width: 10.5rem; padding: 0 1rem 0 1.2rem; }
+		/* Tech logos on home */
+		.tech-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin: 1.6rem auto 0; max-width: 32rem; }
+		.tech-strip .tech { display: flex; flex-direction: column; align-items: center; width: 4.6rem; }
+		.tech-strip .tech span.ico { width: 2.6rem; height: 2.6rem; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,.25); transition: transform .2s ease; }
+		.tech-strip .tech:hover span.ico { transform: translateY(-3px); }
+		.tech-strip .tech img { width: 1.6rem; height: 1.6rem; object-fit: contain; }
+		.tech-strip .tech small { margin-top: .35rem; font-size: .55rem; letter-spacing: .08rem; text-transform: uppercase; opacity: .8; white-space: nowrap; }
+		/* Company logos */
+		.job-title { display: flex; align-items: center; gap: .8rem; }
+		.job-logo { width: 2.8rem; height: 2.8rem; flex: none; border-radius: 6px; background: #fff; padding: .3rem; object-fit: contain; }
 		/* Jobs */
 		.job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; margin-bottom: .2rem; }
 		.job-head h3 { margin: 0; }
@@ -52,6 +62,20 @@
 						<span class="fr">Platform Engineer Python · DevOps AWS / Kubernetes · FinOps · IA générative</span>
 						<span class="en">Platform Engineer · Python · DevOps AWS / Kubernetes · FinOps · Generative AI</span>
 					</p>
+					<div class="tech-strip">
+						<div class="tech" title="Python"><span class="ico"><img src="images/skills/python.svg" alt="Python" /></span><small>Python</small></div>
+						<div class="tech" title="AWS"><span class="ico"><img src="images/skills/aws.svg" alt="AWS" /></span><small>AWS</small></div>
+						<div class="tech" title="Kubernetes"><span class="ico"><img src="images/skills/kubernetes.svg" alt="Kubernetes" /></span><small>Kubernetes</small></div>
+						<div class="tech" title="Terraform"><span class="ico"><img src="images/skills/terraform.svg" alt="Terraform" /></span><small>Terraform</small></div>
+						<div class="tech" title="Docker"><span class="ico"><img src="images/skills/docker.svg" alt="Docker" /></span><small>Docker</small></div>
+						<div class="tech" title="GitHub Actions"><span class="ico"><img src="images/skills/githubactions.svg" alt="GitHub Actions" /></span><small>GitHub Actions</small></div>
+						<div class="tech" title="Argo CD"><span class="ico"><img src="images/skills/argocd.svg" alt="Argo CD" /></span><small>Argo CD</small></div>
+						<div class="tech" title="Claude Code"><span class="ico"><img src="images/skills/claude.svg" alt="Claude Code" /></span><small>Claude Code</small></div>
+						<div class="tech" title="Copilot"><span class="ico"><img src="images/skills/copilot.svg" alt="Copilot" /></span><small>Copilot</small></div>
+						<div class="tech" title="MCP"><span class="ico"><img src="images/skills/mcp.svg" alt="MCP" /></span><small>MCP</small></div>
+						<div class="tech" title="Jira"><span class="ico"><img src="images/skills/jira.svg" alt="Jira" /></span><small>Jira</small></div>
+						<div class="tech" title="SonarQube"><span class="ico"><img src="images/skills/sonarqube.svg" alt="SonarQube" /></span><small>SonarQube</small></div>
+					</div>
 				</div>
 			</div>
 			<nav>
@@ -129,10 +153,10 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3>Platform Engineer Python</h3>
+						<div class="job-title"><img class="job-logo" src="https://www.google.com/s2/favicons?sz=128&domain=engie.com" alt="ENGIE" loading="lazy" /><h3>Platform Engineer Python</h3></div>
 						<span class="job-meta"><span class="fr">Sept. 2025 – aujourd'hui</span><span class="en">Sept. 2025 – present</span></span>
 					</div>
-					<p class="job-meta">ENGIE Digital · Freelance</p>
+					<p class="job-meta">ENGIE · Freelance</p>
 					<p class="fr">Plateforme DevOps interne du groupe ENGIE : elle fournit automatiquement aux équipes de développement leurs outils (Jira, Confluence, GitHub, SonarQube, Artifactory, Copilot, Claude Code), gère les accès de dizaines de milliers d'utilisateurs et refacture l'usage aux entités.</p>
 					<p class="en">ENGIE's internal DevOps platform: it automatically provides development teams with their tools (Jira, Confluence, GitHub, SonarQube, Artifactory, Copilot, Claude Code), manages access for tens of thousands of users and charges usage back to business units.</p>
 					<ul class="fr">
@@ -156,7 +180,7 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3><span class="fr">Consultant DevOps / Développeur Python</span><span class="en">DevOps Consultant / Python Developer</span></h3>
+						<div class="job-title"><img class="job-logo" src="https://www.google.com/s2/favicons?sz=128&domain=societegenerale.com" alt="Société Générale" loading="lazy" /><h3><span class="fr">Consultant DevOps / Développeur Python</span><span class="en">DevOps Consultant / Python Developer</span></h3></div>
 						<span class="job-meta"><span class="fr">Oct. 2024 – août 2025</span><span class="en">Oct. 2024 – Aug. 2025</span></span>
 					</div>
 					<p class="job-meta">Société Générale · Synchrone</p>
@@ -177,7 +201,7 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3><span class="fr">Consultant DevOps Cloud AWS</span><span class="en">AWS Cloud DevOps Consultant</span></h3>
+						<div class="job-title"><img class="job-logo" src="https://www.google.com/s2/favicons?sz=128&domain=engie.com" alt="ENGIE Digital" loading="lazy" /><h3><span class="fr">Consultant DevOps Cloud AWS</span><span class="en">AWS Cloud DevOps Consultant</span></h3></div>
 						<span class="job-meta"><span class="fr">Sept. 2022 – janv. 2024</span><span class="en">Sept. 2022 – Jan. 2024</span></span>
 					</div>
 					<p class="job-meta">ENGIE Digital · Devoteam</p>
@@ -196,7 +220,7 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3><span class="fr">Développeur Python, automatisation API</span><span class="en">Python Developer, API Automation</span></h3>
+						<div class="job-title"><img class="job-logo" src="images/Logo_Outscale_Bleu_300x160-300x160.png" alt="3DS Outscale" loading="lazy" /><h3><span class="fr">Développeur Python, automatisation API</span><span class="en">Python Developer, API Automation</span></h3></div>
 						<span class="job-meta"><span class="fr">Juil. 2020 – juil. 2022</span><span class="en">Jul. 2020 – Jul. 2022</span></span>
 					</div>
 					<p class="job-meta">3DS Outscale · Saint-Cloud</p>
@@ -215,7 +239,7 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3><span class="fr">Ingénieur QA / Automatisation</span><span class="en">QA / Automation Engineer</span></h3>
+						<div class="job-title"><img class="job-logo" src="images/Renault_2009_logo.svg" alt="Renault" loading="lazy" /><h3><span class="fr">Ingénieur QA / Automatisation</span><span class="en">QA / Automation Engineer</span></h3></div>
 						<span class="job-meta"><span class="fr">Mars 2019 – juin 2020</span><span class="en">Mar. 2019 – Jun. 2020</span></span>
 					</div>
 					<p class="job-meta">Renault · Ausy, Guyancourt</p>
@@ -232,7 +256,7 @@
 
 				<div class="job-entry">
 					<div class="job-head">
-						<h3><span class="fr">Stage ingénieur R&amp;D</span><span class="en">R&amp;D Engineer Intern</span></h3>
+						<div class="job-title"><img class="job-logo" src="https://www.google.com/s2/favicons?sz=128&domain=inria.fr" alt="INRIA" loading="lazy" /><h3><span class="fr">Stage ingénieur R&amp;D</span><span class="en">R&amp;D Engineer Intern</span></h3></div>
 						<span class="job-meta"><span class="fr">Févr. – août 2018</span><span class="en">Feb. – Aug. 2018</span></span>
 					</div>
 					<p class="job-meta">LORIA / INRIA · Nancy</p>
