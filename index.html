@@ -21,7 +21,7 @@
 		/* Language switch */
 		html[data-lang="fr"] .en { display: none !important; }
 		html[data-lang="en"] .fr { display: none !important; }
-		.lang-switch { margin-left: .6rem; display: flex; border: 1px solid rgba(255,255,255,.6); border-radius: 4px; overflow: hidden; }
+		.lang-switch { margin-left: .2rem; display: flex; border: 1px solid rgba(255,255,255,.6); border-radius: 4px; overflow: hidden; }
 		.lang-switch button { background: transparent !important; color: #fff !important; min-width: 0; border: 0; padding: .35rem .8rem; font-size: .75rem; letter-spacing: .15rem; cursor: pointer; line-height: 1.5; height: auto; box-shadow: none; }
 		.lang-switch button.active { background: rgba(255,255,255,.9) !important; color: #1b1f22 !important; }
 		/* Nav: equal widths so the template's centre separator lines up */
@@ -53,7 +53,9 @@
 		.topnav { position: fixed; top: 0; left: 0; right: 0; z-index: 10001; height: 3.4rem; display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(27,31,34,.72); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.12); }
 		.topnav a, .topnav a:hover, .topnav a:focus { border-bottom: 0; color: #fff !important; text-decoration: none !important; }
 		.topnav .brand { font-weight: 700; letter-spacing: .12rem; text-transform: uppercase; font-size: .85rem; }
+		.topnav-right { display: flex; align-items: center; gap: .6rem; }
 		.topnav-links { display: flex; align-items: center; gap: .3rem; }
+		#header > nav { display: none !important; }
 		.topnav-links > a { font-size: .72rem; letter-spacing: .12rem; text-transform: uppercase; padding: .45rem .75rem; border-radius: 4px; }
 		.topnav-links > a:hover, .topnav-links > a.active { background: rgba(255,255,255,.12); }
 		.topnav-links > a.nav-cv { border: 1px solid rgba(255,255,255,.6); }
@@ -68,7 +70,6 @@
 			.topnav-links { display: none; position: absolute; top: 3.4rem; left: 0; right: 0; flex-direction: column; align-items: stretch; background: rgba(27,31,34,.96); padding: .5rem 1rem 1rem; border-bottom: 1px solid rgba(255,255,255,.12); }
 			.topnav.open .topnav-links { display: flex; }
 			.topnav-links > a { padding: .8rem .5rem; }
-			.lang-switch { margin: .6rem 0 0; align-self: flex-start; }
 		}
 		#header .content .inner { max-height: 60rem; }
 		@media (max-width: 480px) { .tech-strip { gap: .4rem; } .tech-strip .tech { width: 3.9rem; } .tech-strip .tech span.ico { width: 2.3rem; height: 2.3rem; } .tech-strip .tech small { font-size: .5rem; letter-spacing: .04rem; } }
@@ -92,7 +93,7 @@
 	<!-- Top navbar -->
 	<nav class="topnav" id="topnav">
 		<a href="#" class="brand">Ismail El Fadli</a>
-		<button type="button" class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+		<div class="topnav-right">
 		<div class="topnav-links">
 			<a href="#intro"><span class="fr">À propos</span><span class="en">About</span></a>
 			<a href="#jobs"><span class="fr">Expériences</span><span class="en">Experience</span></a>
@@ -100,10 +101,12 @@
 			<a href="#contact">Contact</a>
 			<a href="CV_Ismail_El_Fadli.pdf" target="_blank" rel="noopener" class="fr nav-cv">CV</a>
 			<a href="CV_Ismail_El_Fadli_EN.pdf" target="_blank" rel="noopener" class="en nav-cv">CV</a>
-			<div class="lang-switch" role="group" aria-label="Language">
-				<button type="button" data-set-lang="fr">FR</button>
-				<button type="button" data-set-lang="en">EN</button>
-			</div>
+		</div>
+		<div class="lang-switch" role="group" aria-label="Language">
+			<button type="button" data-set-lang="fr">FR</button>
+			<button type="button" data-set-lang="en">EN</button>
+		</div>
+		<button type="button" class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 		</div>
 	</nav>
 
